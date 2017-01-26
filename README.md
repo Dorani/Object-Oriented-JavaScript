@@ -16,3 +16,9 @@ NOTES
 #State and Behavior
 -The state of an object refers to the condition of all values at a particular point in time.
 - You could say that the state of an object is stored in its properties, and the behavior in its methods.
+-examples in code.js
+
+##Constructor Functions
+-describes how an object should be created
+-create similar objects
+-each object created is known as an instance of that object Types

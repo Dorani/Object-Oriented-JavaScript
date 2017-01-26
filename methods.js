@@ -92,3 +92,5 @@ var calculator = {
     return this.sum;
   }
 }
+//-------------------------------------------------------------------//
+//if we want to create multiple objs go to Constructor.js
