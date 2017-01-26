@@ -75,3 +75,20 @@ var dice10 = {
 }
 
 //it allows us to have multiple objects with similar methods
+
+
+
+//Create a calculator
+
+var calculator = {
+  sum: 0,
+  add: function(value){
+    this.sum = this.sum + value; //everytime we pass in a value, it will be added to the sum
+  },
+  clear: function(){
+    this.sum = 0;
+  },
+  equals: function(){
+    return this.sum;
+  }
+}
