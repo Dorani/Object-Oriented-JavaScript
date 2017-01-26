@@ -70,7 +70,7 @@ var dice10 = {
   sides: 10,
   roll: function() { //anonymous function
     var randonNumber = Math.floor(Math.randon() * this.sides) + 1; //randon number between 1 and sides
-    console.log(randonNumber);
+    return(randonNumber);
   }
 }
 
