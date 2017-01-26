@@ -16,3 +16,24 @@ var contact2 = new Contact("seif", "seif@gmail.com");
 //we use "new" keyword, this turns a regular function call into a Constructor
 //here, this, will mean a new instance of an object
 //return is not required
+
+
+//------------------------------------//
+//turn dice roll obj/method into constructor function
+
+var dice = {
+  sides: 10,
+  roll: function() { //anonymous function
+    var randonNumber = Math.floor(Math.randon() * this.sides) + 1; //randon number between 1 and sides
+    return(randonNumber);
+  }
+}
+
+function Dice(sides){
+  this.sides = sides;
+  this.roll = function(){
+    var randonNumber = Math.floor(Math.randon() * this.sides) + 1; //randon number between 1 and sides
+    return(randonNumber);
+  }
+}
+var dice = new Dice(6);
