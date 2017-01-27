@@ -37,3 +37,4 @@ function Dice(sides){
   }
 }
 var dice = new Dice(6);
+var dice = new Dice(10);

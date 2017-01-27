@@ -22,3 +22,5 @@ NOTES
 -describes how an object should be created
 -create similar objects
 -each object created is known as an instance of that object Types
+
+##
