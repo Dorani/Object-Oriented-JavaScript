@@ -38,9 +38,27 @@ function Dice(sides){
   this.roll = diceRoll;
 }
 
+var dice = new Dice(6);
+var dice = new Dice(10);
+
+//whats the problem above? we have a function floating not connected
+//to the dice constructor function
+//what if we have dozens of objects and dozens of methods?
+//it may get hard to track which obj works with which method call
+//the solution : PROTOTYPE:
+
+function Dice(sides){
+  this.sides = sides;
+}
+
+Dice.prototype.roll = function(){
+  var randonNumber = Math.floor(Math.randon() * this.sides) + 1; //randon number between 1 and sides
+  return(randonNumber);
+}
 
 var dice = new Dice(6);
 var dice = new Dice(10);
+
 
 //------------------------------------
 
