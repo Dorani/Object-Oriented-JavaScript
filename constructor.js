@@ -28,13 +28,20 @@ var dice = {
     return(randonNumber);
   }
 }
-
+//----------------------------------
+function(diceRoll){
+  var randonNumber = Math.floor(Math.randon() * this.sides) + 1; //randon number between 1 and sides
+  return(randonNumber);
+}
 function Dice(sides){
   this.sides = sides;
-  this.roll = function(){
-    var randonNumber = Math.floor(Math.randon() * this.sides) + 1; //randon number between 1 and sides
-    return(randonNumber);
-  }
+  this.roll = diceRoll;
 }
+
+
 var dice = new Dice(6);
 var dice = new Dice(10);
+
+//------------------------------------
+
+//old browsers with hardly any ram will run slow so:
