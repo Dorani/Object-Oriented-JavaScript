@@ -59,6 +59,7 @@ Dice.prototype.roll = function(){
 var dice = new Dice(6);
 var dice = new Dice(10);
 
+
 // What is happening above:
 //the js interpreter will try to call the dice10 on the obj itself
 //(dice10), it is not there, SO it will check the prototype
